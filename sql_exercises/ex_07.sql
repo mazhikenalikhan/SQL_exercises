@@ -1,0 +1,1 @@
+SELECT i.Total, c.FirstName || " " || c.LastName, i.BillingCountry, e.FirstName || " " || e.LastName FROM Invoice i JOIN Customer c ON i.CustomerId == c.CustomerId JOIN Employee e ON e.EmployeeId == c.SupportRepId WHERE e.Title LIKE "%sales%agent%" or "%agen%sales%";
