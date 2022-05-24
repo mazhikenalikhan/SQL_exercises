@@ -1,1 +1,1 @@
-SELECT c.FirstName || " " || c.LastName, i.InvoiceId, i.InvoiceDate, i.BillingCountry  FROM Customer c JOIN Invoice i ON c.CustomerId == i.CustomerId  WHERE c.Country == "Brazil";
+SELECT FirstName || " " || LastName FROM Employee WHERE Title LIKE "%sales%agent%" or "%agent%sales%";
